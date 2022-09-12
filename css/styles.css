@@ -151,5 +151,11 @@ p{
         background-attachment: initial;
         height: 800px;
     }
+
+    .section{
+        height: 800px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     
 }
