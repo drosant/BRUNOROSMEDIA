@@ -1,0 +1,166 @@
+:root {
+    --blanco: #cbcbcb;
+    --claro: #bbbaba;
+    --oscuro: rgb(18, 18, 18);
+    --medio: rgb(30, 30, 30);
+    --medio_plus: rgb(94, 92, 92);
+    --morado: rgb(214, 107, 200);
+ 
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Anek Telugu', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--medio);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 15% 5% 15%;
+
+}
+
+.space{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--medio_plus);
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    height: 20rem;
+
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    letter-spacing: 0.8rem;
+    padding: 13px 15px 13px 15px;
+    background-color: var(--medio_plus);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h2{
+    color: var(--claro);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 3rem;
+}
+
+.img_text{
+    color: white;
+}
+
+.img_text_3{
+    color: black;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.section_2 p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--claro);
+}
+
+.section_2 h2{
+    margin-top: 4%;
+}
+
+.space_1{
+    background-image: url("/img/sec_1.jpg");
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
+}
+
+.space_2{
+    background-image: url("/img/sec_2.jpg");
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
+}
+
+.space_3{
+    background-image: "#";
+    background-image: url("/img/sec_3.jpg");
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
+}
+
+.section_2{
+    background-color: var(--medio_plus);
+    width: 100%;
+    height: 30rem;
+    margin: 0;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    background-image: url("/img/sec_1.jpg");
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
+    justify-content:center;
+    align-items: center;
+}
+
+.final h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1rem;
+    background-color: var(--medio_plus);
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 13px 17px 13px 17px;
+    text-transform: uppercase;
+}
