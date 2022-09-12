@@ -160,10 +160,12 @@ p{
 
     h1{
         padding: 13px 5px 13px 5px;
+        width: 50%;
     }
 
     .final h2{
         padding: 13px 5px 13px 5px;
+        width: 50%;
     }
     
 }
