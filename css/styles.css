@@ -157,5 +157,13 @@ p{
         margin-top: 0px;
         margin-bottom: 0px;
     }
+
+    h1{
+        padding: 13px 5px 13px 5px;
+    }
+
+    .final h2{
+        padding: 13px 5px 13px 5px;
+    }
     
 }
