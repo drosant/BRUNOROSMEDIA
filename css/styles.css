@@ -203,5 +203,9 @@ a:hover{
         width: 60%;
         letter-spacing: 0.8rem;
     }
+
+    a{
+        font-size: 1rem;
+    }
     
 }
