@@ -47,6 +47,7 @@ main{
     justify-content: center;
     margin: 5% 15% 5% 15%;
     overscroll-behavior: contain;
+    scroll-snap-stop: always;
 }
 
 .space{
