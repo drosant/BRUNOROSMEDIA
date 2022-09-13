@@ -4,6 +4,7 @@
     --oscuro: rgb(18, 18, 18);
     --medio: rgb(30, 30, 30);
     --medio_plus: rgb(94, 92, 92);
+    --medio_plus_trans: rgba(94, 92, 92, 0.5);
     --morado: rgb(214, 107, 200);
 }
 
@@ -38,6 +39,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-type: y mandatory;
 }
 
 .section{
@@ -46,7 +48,7 @@ main{
     align-items: center;
     justify-content: center;
     margin: 5% 15% 5% 15%;
-    overscroll-behavior: contain;
+
 }
 
 .space{
@@ -56,8 +58,7 @@ main{
     width: 100%;
     text-align: center;
     justify-content: center;
-    height: 20rem;
-    overscroll-behavior: contain;
+
 }
 
 h1{
@@ -91,14 +92,45 @@ p{
 }
 
 .space_1{
+    display: flex;
+    flex-direction: column;
     background-image: url("/img/sec_1.jpg");
-    min-height: 500px;
+    min-height: 56rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
     
+}
+
+.navigator{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    padding: 0 5rem 0 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(247, 245, 245, 0.7);
+}
+
+a{
+    font-family: 'Chakra Petch', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--oscuro);
+    width: 100%;
+    color: black;
+}
+
+a:hover{
+    background-color: var(--medio_plus_trans);
+    color: white;
 }
 
 .space_2{
@@ -127,7 +159,6 @@ p{
     display: flex;
     flex-direction: column;
     background-image: url("/img/sec_1.jpg");
-    min-height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,6 +166,7 @@ p{
     box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
     justify-content:center;
     align-items: center;
+    min-height: 95rem;
 }
 
 .final h2{
