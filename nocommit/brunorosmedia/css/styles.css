@@ -1,0 +1,222 @@
+:root {
+    --blanco: #cbcbcb;
+    --claro: #bbbaba;
+    --oscuro: rgb(18, 18, 18);
+    --medio: rgb(30, 30, 30);
+    --medio_plus: rgba(73, 72, 72, 0.9);
+    --medio_plus_trans: rgba(94, 92, 92, 0.6);
+    --morado: rgb(214, 107, 200);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Anek Telugu', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--medio);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-type: y mandatory;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 15% 5% 15%;
+
+}
+
+.space{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--medio_plus);
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    letter-spacing: 0.8rem;
+    padding: 13px 15px 13px 15px;
+    background-color: var(--medio_plus);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h2{
+    color: var(--claro);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 3rem;
+}
+
+.img_text{
+    color: white;
+}
+
+.img_text_3{
+    color: black;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.space_1{
+    display: flex;
+    flex-direction: column;
+    background-image: url("/img/sec_1.jpg");
+    min-height: 56rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
+    
+}
+
+.navigator{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(247, 245, 245, 0.7);
+    padding: 0;
+}
+
+a{
+    font-family: 'Chakra Petch', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--oscuro);
+    width: 100%;
+    color: black;
+}
+
+a:hover{
+    background-color: var(--medio_plus_trans);
+    color: white;
+}
+
+.space_2{
+    background-image: url("/img/sec_2.jpg");
+    min-height: 60rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
+    scroll-snap-stop: always;
+}
+
+.space_3{
+    background-image: "#";
+    background-image: url("/img/sec_3.jpg");
+    min-height: 60rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    background-image: url("/img/sec_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(247, 245, 245, 0.2);
+    justify-content:center;
+    align-items: center;
+    min-height: 95rem;
+}
+
+.final h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1rem;
+    background-color: var(--medio_plus);
+    font-family: 'Chakra Petch', sans-serif;
+    padding: 13px 17px 13px 17px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1080px){
+    .space{
+        background-attachment: initial;
+        height: 800px;
+    }
+
+    .section{
+        height: 850px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    h1{
+        padding: 13px 10px 13px 5px;
+        width: 60%;
+        letter-spacing: 0.8rem;
+    }
+
+    .final h2{
+        padding: 13px 10px 13px 5px;
+        width: 60%;
+        letter-spacing: 0.8rem;
+    }
+
+    a{
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .navigator{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 3rem;
+        align-items: center;
+
+    }
+    
+}
