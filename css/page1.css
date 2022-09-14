@@ -106,3 +106,12 @@ a{
 .back:hover{
     color: white;
 }
+
+@media (max-width: 768px) {
+    .back{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
