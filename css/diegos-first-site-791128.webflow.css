@@ -355,7 +355,12 @@
     width: 60%;
   }
 
+  .nav-button {
+    width: 100%;
+  }
+
   .section-2 {
+    height: auto;
     margin-bottom: -1px;
   }
 
@@ -371,11 +376,21 @@
   }
 
   .container-3 {
-    width: 93%;
+    width: auto;
+  }
+
+  .grid {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-rows: auto auto;
   }
 
   .heading-4 {
     margin-bottom: 18px;
+  }
+
+  .section-3 {
+    margin-top: 32px;
   }
 
   .section-4 {
@@ -401,12 +416,38 @@
   .logo-holder {
     margin-top: 5px;
   }
+
+  .container-3 {
+    width: 95%;
+  }
+
+  .grid {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 479px) {
+  .container {
+    height: auto;
+  }
+
   .button {
+    margin-top: 14px;
     padding-left: 19px;
     padding-right: 19px;
+  }
+
+  .button.form {
+    width: 100%;
+    margin-top: 29px;
+    margin-bottom: 32px;
+  }
+
+  .section {
+    height: auto;
+    margin-top: 9px;
+    margin-bottom: 35px;
   }
 
   .image {
@@ -417,7 +458,8 @@
   }
 
   .paragraph {
-    width: 95%;
+    width: 85%;
+    margin-top: 10px;
     padding-left: 31px;
     padding-right: 31px;
   }
@@ -427,8 +469,62 @@
     padding-right: 29px;
   }
 
+  .nav-menu {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 32px;
+  }
+
+  .nav-button {
+    background-color: var(--white);
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .section-2 {
+    height: auto;
+    margin-bottom: 44px;
+  }
+
+  .grid {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .heading-4 {
+    font-size: 37px;
+  }
+
   .feature-heading {
+    background-color: var(--white);
     text-align: center;
+    font-size: 40px;
+  }
+
+  .form {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    flex-flow: column;
+  }
+
+  .section-4 {
+    height: auto;
+  }
+
+  .menu-button {
+    color: #211a1a;
+  }
+
+  .menu-button.w--open {
+    background-color: var(--white);
+    color: #000;
   }
 }
 
